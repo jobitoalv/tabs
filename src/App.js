@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { FaAngleDoubleRight, FaTruckLoading } from 'react-icons/fa'
+import { FaAngleDoubleRight, FaTruckLoading, FaDog } from 'react-icons/fa'
 import { GrGremlin } from "react-icons/gr";
 // ATTENTION!!!!!!!!!!
 // I SWITCHED TO PERMANENT DOMAIN
@@ -30,7 +30,12 @@ function App() {
 
   const {company, dates, duties, title} = jobs[value]
 
-  return <h2>jobs<GrGremlin/></h2>
+  return <section>
+    <div className='title'>
+      <h2>expierence <FaDog/></h2>
+      <div className='underline'></div>
+    </div>
+  </section>
 }
 
 export default App
