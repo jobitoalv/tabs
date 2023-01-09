@@ -28,7 +28,9 @@ function App() {
     );
   }
 
-  return <h2>tabs project setup<GrGremlin/></h2>
+  const {company, dates, duties, title} = jobs[value]
+
+  return <h2>jobs<GrGremlin/></h2>
 }
 
 export default App
