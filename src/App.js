@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { FaAngleDoubleRight } from 'react-icons/fa'
+import { FaAngleDoubleRight, FaTruckLoading } from 'react-icons/fa'
 import { GrGremlin } from "react-icons/gr";
 // ATTENTION!!!!!!!!!!
 // I SWITCHED TO PERMANENT DOMAIN
@@ -19,6 +19,14 @@ function App() {
   useEffect(() => {
     fetchJobs();
   }, []);
+
+  if (loading){
+    return (
+    <section className='section loading'>
+      <h1>loading<FaTruckLoading/></h1>
+    </section>
+    );
+  }
 
   return <h2>tabs project setup<GrGremlin/></h2>
 }
